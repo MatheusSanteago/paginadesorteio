@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#wrapper{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+header{
+    background-attachment: fixed;
+    background-image: url(https://www.teahub.io/photos/full/287-2870188_3d-under-the-sea-wallpaper-amazing-under-the.jpg);
+    height: 100px;
+    box-shadow: inset black 0px 0px 30px;
+
+}
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#188ceb, #a3d9ee);
+    height: 400px;
+
+    
+}
+#select{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    border: solid 5px black;
+  
+}
+button {
+    font-size: 20px;
+    background: linear-gradient(#188ceb, #a3d9ee);
+    padding: 15px;
+    border: solid 4px black;
+    border-radius: 10px;
+}
+#img_2{
+    background-image: url(https://www.teahub.io/photos/full/287-2870188_3d-under-the-sea-wallpaper-amazing-under-the.jpg);
+    background-attachment: fixed;
+    height: 400px;
+    box-shadow: inset black 0px 0px 60px;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(#188ceb, #a3d9ee);
+    height: 100px;
+}
+.dev{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+img{
+    width: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+button:hover{
+    background: linear-gradient(#054c86, #a3d9ee);
+    cursor: pointer;
+}

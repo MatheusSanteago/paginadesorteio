@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#wrapper{
+    margin-right: 40px;
+    margin-left: 40px;
+}
+header{
+    background-attachment: fixed;
+    background-image: url(https://images.unsplash.com/photo-1559825481-12a05cc00344?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&w=1000&q=80);
+    height: 100px;
+    box-shadow: inset black 0px 0px 30px;
+
+}
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 70px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+    height: 400px;
+    box-shadow: inset black 0px 0px 10px;
+    
+}
+#select{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    border: double 5px black;
+    box-shadow: black 0px 0px 100px;
+}
+#img_2{
+    background-image: url(https://images.unsplash.com/photo-1559825481-12a05cc00344?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8&w=1000&q=80);
+    background-attachment: fixed;
+    height: 400px;
+    box-shadow: inset black 0px 0px 60px;
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    background-color: cornflowerblue;
+    height: 100px;
+}
+.dev{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+img{
+    width: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+button{
+    font-size: 20px;
+    background-color: cornflowerblue;
+    padding: 10px;
+    width: 150px;
+    border: double 5px black;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(14, 230, 238);
+}
+input{
+    width: 200px;
+    padding: 10px;
+    outline: none;
+    border: double 5px black;
+}
