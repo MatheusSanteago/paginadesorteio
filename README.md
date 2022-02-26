@@ -2,5 +2,5 @@
  
  Pagina feita com intuito de fixar contéudo de JS.
  
- <img src="x.png"> 
- <img src="x1.png">
+ <img src="/CSS/assets/x.png"> 
+ <img src="/CSS/assets/x1.png">
