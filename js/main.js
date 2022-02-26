@@ -1,38 +1,48 @@
-let numbers = []
-
-    var a = localStorage.getItem('numbers')
+var numbers = [];
+var names = [];
 
 function selectNumbers() {
-    
-    inputValue = document.getElementById('input_numbers').value;
-    valueToNumber = parseInt(inputValue)
-    
-    let numbersJSON = JSON.stringify(valueToNumber)
-    console.log(valueToNumber);
+  localStorage.setItem("numbers", numbers);
+  inputValue = document.getElementById("input_numbers").value;
+  valueToNumber = parseInt(inputValue);
 
-    if (isNaN(numbersJSON)){
-        alert('Digite um valor correto')
-        localStorage.getItem('numbers');
-        localStorage.clear('numbers','null');
+  let numbersJSON = JSON.stringify(valueToNumber);
+  console.log(valueToNumber);
 
-    } else if (valueToNumber <= 0){
-        alert('Digite um valor acima de 0');
-    } else {}
+  if (isNaN(numbersJSON)) {
+    alert("Digite um valor correto");
+  } else if (valueToNumber <= 0) {
+    alert("Digite um valor acima de 0");
+  } else {
+  }
 
-    numbers.push(numbersJSON);
-    localStorage.setItem('numbers',numbers);
-  
+  numbers.push(numbersJSON);
 }
-
 function drawNumbers() {
-    localStorage.getItem('numbers') 
 
-    let l = numbers.length
-    let ns = Math.floor(Math.random() * l)
+  let l = numbers.length;
+  let ns = Math.floor(Math.random() * l);
 
-    document.getElementById('span').innerHTML = " O número sorteado foi: " + numbers[ns];
+  document.getElementById("span").innerHTML =
+    " O número sorteado foi: " + numbers[ns];
+}
+function refreshPage() {
+  window.location.reload();
+}
+// FUNÇÕES DE SORTEIO PARA NOMES
+function insertName() {
+
+  let nameValue = document.getElementById("input_names").value;
+
+  names.push(nameValue);
+
+  console.log(names);
 }
 
-function refreshPage(){
-    window.location.reload();
-} 
+function drawNames() {
+
+  let nameLength = names.length;
+  let random = Math.floor(Math.random() * nameLength);
+  
+  document.getElementById('span2').innerHTML = " O número sorteado foi " +  names[random];
+}
